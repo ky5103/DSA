@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+struct emp
+{
+    int id;
+  string name;
+   struct address
+{
+    int houseno ;
+    string  area;
+    string city;
+     string state;
+}address;
+};
+int main() 
+{
+    emp e;
+     cout<< "enter the name: ";
+     cin>>e.name;
+     cout<< "enter the id no :";
+     cin>> e.id;
+     cout<< "enter the house no. :";
+     cin>>e.address.houseno;
+     cout<<"enter the area :";
+     cin>>e.address.area;
+     cout<<"enter the city :";
+     cin>>e.address.city;
+     cout<<"enter the state :";
+     cin>>e.address.state;
+     
+     cout<< "EMPLOYEE ID CARD "<<endl;
+     cout<<"name : "<<e.name<<endl;
+     cout<< "id no. : "<<e.id<<endl;
+     cout<< "address : ";
+     cout<<e.address.houseno<<","<<e.address.area<<","<<e.address.city<<","<<e.address.state<<endl;
+     
+
+    return 0;
+}
