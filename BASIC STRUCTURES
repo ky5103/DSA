@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+struct student
+{
+ int rollno;
+ char name[50];
+ float cgpa;
+    
+};
+int main() 
+{
+    student s1;
+    cout<<"enter the name ";
+    cin.get(s1.name,50);
+    cout<<"enter roll no. :";
+    cin>>s1.rollno;
+    cout<<" enter cgpa : ";
+    cin>>s1.cgpa;
+    cout<<"display information"<<endl;
+    cout<<"name of the student" <<s1.name<<endl;
+    cout<<"roll no. "<<s1.rollno<<endl;
+    cout<<"cgpa "<<s1.cgpa<<endl;
+    
+    
+    
+    
+    
+    return 0;
+}
